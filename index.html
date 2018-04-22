@@ -203,7 +203,7 @@
         async function openCamera() {
             const stream = await navigator.mediaDevices.getUserMedia({
                 'audio': false,
-                'video': {facingMode: 'environment'}
+                'video': {facingMode: 'user'}
             });
 
             // window.stream = stream;
