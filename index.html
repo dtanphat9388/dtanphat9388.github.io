@@ -186,7 +186,7 @@
     </div>
     
 <!--     setup camera -->
-    <video id="videoStream" autoplay playsinline></video>
+    <video id="videoStream" autoplay playsinline controls="true"></video>
 
     <script>
         let videoElement = document.getElementById('videoStream')
@@ -210,11 +210,11 @@
                 videoElement.srcObject = stream;
                 videoElement.height = 200
                 videoElement.width = 320
-                videoElement.setAttribute("playsinline", true);
-                videoElement.setAttribute("controls", true);
-                setTimeout(() => {
-                    videoElement.removeAttribute("controls");
-                });
+//                 videoElement.setAttribute("playsinline", true);
+//                 videoElement.setAttribute("controls", true);
+//                 setTimeout(() => {
+//                     videoElement.removeAttribute("controls");
+//                 });
             })  
         }
 
