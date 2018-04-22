@@ -206,7 +206,7 @@
                 'audio': false,
                 'video': {facingMode: 'user'}
             }).then( stream => {
-                // window.stream = stream;
+                window.stream = stream;
                 videoElement.srcObject = stream;
                 this.videoElement.height = 200
                 this.videoElement.width = 320
