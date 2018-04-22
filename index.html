@@ -186,7 +186,7 @@
     </div>
     
 <!--     setup camera -->
-    <video id="videoStream" width="320" height="200" autoplay playsinline></video>
+    <video id="videoStream" autoplay playsinline></video>
 
     <script>
         let videoElement = document.getElementById('videoStream')
@@ -208,11 +208,9 @@
             }).then( stream => {
                 // window.stream = stream;
                 videoElement.srcObject = stream;
-            })
-            
-          
-
-            
+                this.videoElement.height = 200
+                this.videoElement.width = 320
+            })  
         }
 
         if (isMediaDevices()) { openCamera() }
