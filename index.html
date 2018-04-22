@@ -210,6 +210,11 @@
                 videoElement.srcObject = stream;
                 videoElement.height = 200
                 videoElement.width = 320
+                videoElement.setAttribute("playsinline", true);
+                videoElement.setAttribute("controls", true);
+                setTimeout(() => {
+                    videoElement.removeAttribute("controls");
+                });
             })  
         }
 
